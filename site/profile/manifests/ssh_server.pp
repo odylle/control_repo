@@ -6,7 +6,7 @@ class profile::ssh_server {
                 ensure => 'running',
                 enable => 'true',
         }
-        ssh_authorized_keys { 'root@ip-172-31-39-87.eu-central-1.compute.internal':
+        ssh_authorized_key { 'root@ip-172-31-39-87.eu-central-1.compute.internal':
                             ensure => present,
                             user => 'root',
                             type => 'ssh-rsa',
